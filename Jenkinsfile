@@ -34,6 +34,7 @@ node ('docker-cloud'){
 }
 
 def mvn(args) {
+    whereis "usr/bin/mvn"
     sh "usr/bin/mvn ${args}"
 }
 
